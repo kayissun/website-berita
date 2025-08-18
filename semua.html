@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Semua Berita - PortalBerita</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">PortalBerita</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#">Semua Berita</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- SEMUA BERITA -->
+    <section class="py-5">
+      <div class="container">
+        <h3 class="mb-4">Semua Berita</h3>
+
+        <div class="row g-4">
+          <!-- Ulangi blok ini untuk setiap berita -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="img/berita1.jpg" class="card-img-top" alt="Berita 1" />
+              <div class="card-body">
+                <h6 class="card-title">Judul Berita 1</h6>
+                <p class="card-text text-muted">Ringkasan berita singkat untuk menarik pembaca klik...</p>
+                <a href="berita.html" class="btn btn-sm btn-outline-primary">Baca</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Berita 2 -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="img/berita2.jpg" class="card-img-top" alt="Berita 2" />
+              <div class="card-body">
+                <h6 class="card-title">Judul Berita 2</h6>
+                <p class="card-text text-muted">Ringkasan berita singkat untuk menarik pembaca klik...</p>
+                <a href="berita.html" class="btn btn-sm btn-outline-primary">Baca</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Berita 3 -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="img/berita3.jpg" class="card-img-top" alt="Berita 3" />
+              <div class="card-body">
+                <h6 class="card-title">Judul Berita 3</h6>
+                <p class="card-text text-muted">Ringkasan berita singkat untuk menarik pembaca klik...</p>
+                <a href="berita.html" class="btn btn-sm btn-outline-primary">Baca</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tambahkan berita lainnya sesuai kebutuhan -->
+        </div>
+
+        <!-- PAGINATION -->
+        <nav aria-label="Navigasi Halaman" class="mt-5">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+              <a class="page-link">Sebelumnya</a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Selanjutnya</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light mt-5 p-4">
+      <div class="container text-center">
+        <p class="mb-0">&copy; 2025 PortalBerita - Dibuat dengan ❤️ di Indonesia</p>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

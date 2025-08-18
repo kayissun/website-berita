@@ -1,0 +1,123 @@
+body {
+  height: 40000px;
+}
+
+/* Hero Section */
+.hero {
+  background: url(/img/polsa.png) center/cover no-repeat fixed;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+.search-box {
+  background: white;
+  border-radius: 50px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  max-width: 900px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.search-box input {
+  border: none;
+  flex: 1;
+  outline: none;
+  padding: 10px 15px;
+  border-radius: 50px;
+}
+.search-box a {
+  background: orange;
+  border: none;
+  color: black;
+
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-weight: 500;
+}
+
+/* .navbar-nav.flex-row {
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+} */
+
+/* Awal navbar transparan */
+.navbar {
+  transition: all 0.3s ease;
+  padding: 1rem;
+  font-weight: 600;
+  height: 80px;
+}
+.navbar.transparent {
+  background-color: transparent !important;
+}
+/* Saat di-scroll, ubah background */
+.navbar.scrolled {
+  background-color: white !important;
+  padding: 0.7rem;
+  font-weight: 600;
+}
+
+/* Default link awal */
+.navbar-nav .nav-link {
+  transition: color 0.3s ease;
+  color: white;
+}
+/* Hover di awal */
+.navbar.transparent .nav-link:hover {
+  color: #ffd699; /* Oranye muda */
+}
+/* Active di awal */
+.navbar.transparent .nav-link.active {
+  color: #ff6600 !important;
+  font-weight: bold;
+}
+
+.navbar-brand {
+  transition: all 0.3s ease;
+  font-weight: 700;
+}
+.navbar.scrolled .navbar-brand {
+  color: black !important; /* atau ganti logo/gambar */
+}
+
+/* Saat navbar sudah discroll */
+.navbar.scrolled .nav-link {
+  color: black;
+}
+.navbar.scrolled .nav-link:hover {
+  color: #ff6600;
+}
+.navbar.scrolled .nav-link.active {
+  color: #ff6600 !important;
+}
+
+/* BERITA */
+.berita {
+  background-color: aqua;
+  min-width: 100%;
+}
+
+.section-title {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+.section-title h2 {
+  font-weight: bold;
+}
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
