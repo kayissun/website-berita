@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet" />
     <title>Landing</title>
   </head>
   <body>
@@ -28,7 +33,7 @@
                 <li><a class="dropdown-item" href="#">Struktur Organisasi</a></li>
               </ul>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#berita">BERITA</a></li>
+            <li class="nav-item"><a class="nav-link" href="#program-studi">PROGRAM STUDI</a></li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button"> KEUANGAN </a>
               <ul class="dropdown-menu">
@@ -36,7 +41,7 @@
                 <li><a class="dropdown-item" href="#">Beasiswa</a></li>
               </ul>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">LAYANAN</a></li>
+            <li class="nav-item"><a class="nav-link" href="#berita">BERITA</a></li>
             <li class="nav-item"><a class="nav-link" href="#">PROFIL ALUMNI</a></li>
             <li class="nav-item"><a class="nav-link" href="#">KONTAK</a></li>
           </ul>
@@ -47,8 +52,8 @@
 
     <!-- Hero Section -->
     <section class="hero">
-      <h1>POLITEKNIK SAWUNGGALIH AJI<br />KUTOARJO</h1>
-      <div class="search-box mt-4">
+      <h1 class="mt-5">POLITEKNIK SAWUNGGALIH AJI</h1>
+      <div class="search-box mt-5">
         <input type="text" placeholder="Apa yang ingin anda cari?" />
         <a href="#" class="btn">Cari</a>
       </div>
@@ -57,25 +62,25 @@
 
     <!-- pengumuman -->
     <div class="container my-4 mt-5">
-      <div class="row g-4">
+      <div class="row g-3">
         <!-- Kolom 1: Poster -->
         <div class="col-md-3">
           <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-            <div class="carousel-inner">
+            <div class="carousel-inner rounded-2">
               <div class="carousel-item active">
-                <img src="img/iklan1.jpg" class="d-block" width="250" height="600" alt="..." />
+                <img src="img/iklan1.jpg" class="d-block" width="300" height="600" alt="..." />
               </div>
               <div class="carousel-item">
-                <img src="img/iklan2.png" class="d-block" width="250" height="600" alt="..." />
+                <img src="img/iklan2.png" class="d-block" width="300" height="600" alt="..." />
               </div>
               <div class="carousel-item">
-                <img src="img/iklan3.jpg" class="d-block" width="250" height="600" alt="..." />
+                <img src="img/iklan3.jpg" class="d-block" width="300" height="600" alt="..." />
               </div>
               <div class="carousel-item">
-                <img src="img/iklan4.jpg" class="d-block" width="250" height="600" alt="..." />
+                <img src="img/iklan4.jpg" class="d-block" width="300" height="600" alt="..." />
               </div>
               <div class="carousel-item">
-                <img src="img/iklan5.jpg" class="d-block" width="250" height="600" alt="..." />
+                <img src="img/iklan5.jpg" class="d-block" width="300" height="600" alt="..." />
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -137,9 +142,9 @@
         </div>
         <!-- Akhir Pengumuman -->
 
-        <!-- Kolom 3: Sambutan Kepala Sekolah -->
+        <!-- Kolom 3: Sambutan Direktur -->
         <div class="col-md-5 p-3">
-          <h5 class="fw-bold">Sambutan Kepala Sekolah</h5>
+          <h5 class="fw-bold">Sambutan Direktur</h5>
           <video class="rounded shadow" width="500" height="250" controls>
             <source src="img/berhenti.mp4" type="video/mp4" />
             Browser Anda tidak mendukung video.
@@ -156,11 +161,93 @@
     <!-- akhir sambutan -->
     <br /><br />
 
+    <!-- Program Studi Section -->
+    <section class="program-studi container py-5" id="program-studi">
+      <div class="section-title text-center mb-5">
+        <h2>PROGRAM STUDI</h2>
+        <hr />
+      </div>
+
+      <div class="row g-4">
+        <!-- Teknik Informatika -->
+        <div class="col-lg-2 col-md-4">
+          <div class="card h-100 border-0 shadow-sm program-card">
+            <div class="card-body text-center p-3">
+              <div class="program-icon mb-2">
+                <i class="fas fa-laptop-code fa-2x text-primary"></i>
+              </div>
+              <h5 class="card-title">D3 Teknik Informatika</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Teknik Mesin -->
+        <div class="col-lg-2 col-md-4">
+          <div class="card h-100 border-0 shadow-sm program-card">
+            <div class="card-body text-center p-3">
+              <div class="program-icon mb-2">
+                <i class="fas fa-cogs fa-2x text-danger"></i>
+              </div>
+              <h5 class="card-title">D3 Teknik Mesin</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Akuntansi -->
+        <div class="col-lg-2 col-md-4">
+          <div class="card h-100 border-0 shadow-sm program-card">
+            <div class="card-body text-center p-3">
+              <div class="program-icon mb-2">
+                <i class="fas fa-calculator fa-2x text-success"></i>
+              </div>
+              <h5 class="card-title">D3 Akuntansi</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Administrasi Bisnis -->
+        <div class="col-lg-2 col-md-4">
+          <div class="card h-100 border-0 shadow-sm program-card">
+            <div class="card-body text-center p-3">
+              <div class="program-icon mb-2">
+                <i class="fas fa-briefcase fa-2x text-warning"></i>
+              </div>
+              <h5 class="card-title">D3 Administrasi Bisnis</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Manajemen Industri -->
+        <div class="col-lg-2 col-md-4">
+          <div class="card h-100 border-0 shadow-sm program-card">
+            <div class="card-body text-center p-3">
+              <div class="program-icon mb-2">
+                <i class="fas fa-industry fa-2x text-info"></i>
+              </div>
+              <h5 class="card-title">D3 Manajemen Industri</h5>
+            </div>
+          </div>
+        </div>
+        <!-- Manajemen Industri -->
+        <div class="col-lg-2 col-md-4">
+          <div class="card h-100 border-0 shadow-sm program-card">
+            <div class="card-body text-center p-3">
+              <div class="program-icon mb-2">
+                <i class="fas fa-industry fa-2x text-info"></i>
+              </div>
+              <h5 class="card-title">D3 Manajemen Industri</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Program Studi -->
+    <br />
     <!-- Berita -->
     <div class="berita container py-5" id="berita">
       <div class="section-title">
-        <h2>Berita Terbaru</h2>
-        <hr style="width: 60px; margin: auto; border-top: 3px solid white" />
+        <h2 class="text-warning">POLSA TERKINI</h2>
+        <hr />
       </div>
 
       <div class="row g-4">
@@ -169,7 +256,9 @@
           <div class="card border-0 shadow-sm position-relative">
             <img src="img/iklan1.jpg" class="card-img-top image-responsive" alt="Berita 1" />
             <div class="card-body">
-              <h6 class="fw-bold">SPMB 2025: SMAN 1 Yogyakarta Terpilih Sebagai Sekolah Tinjauan...</h6>
+              <a href="#">
+                <h6 class="fw-bold">SPMB 2025: SMAN 1 Yogyakarta Terpilih Sebagai Sekolah Tinjauan...</h6>
+              </a>
               <p class="card-text text-muted small">Rabu (25/6), SMA Negeri 1 Yogyakarta menerima kunjungan dari Kepala BBPPMPV...</p>
             </div>
           </div>
@@ -178,7 +267,9 @@
           <div class="card border-0 shadow-sm position-relative">
             <img src="img/iklan1.jpg" class="card-img-top image-responsive" alt="Berita 1" />
             <div class="card-body">
-              <h6 class="fw-bold">SPMB 2025: SMAN 1 Yogyakarta Terpilih Sebagai Sekolah Tinjauan...</h6>
+              <a href="#">
+                <h6 class="fw-bold">SPMB 2025: SMAN 1 Yogyakarta Terpilih Sebagai Sekolah Tinjauan...</h6>
+              </a>
               <p class="card-text text-muted small">Rabu (25/6), SMA Negeri 1 Yogyakarta menerima kunjungan dari Kepala BBPPMPV...</p>
             </div>
           </div>
@@ -187,7 +278,9 @@
           <div class="card border-0 shadow-sm position-relative">
             <img src="img/iklan1.jpg" class="card-img-top image-responsive" alt="Berita 1" />
             <div class="card-body">
-              <h6 class="fw-bold">SPMB 2025: SMAN 1 Yogyakarta Terpilih Sebagai Sekolah Tinjauan...</h6>
+              <a href="#">
+                <h6 class="fw-bold">SPMB 2025: SMAN 1 Yogyakarta Terpilih Sebagai Sekolah Tinjauan...</h6>
+              </a>
               <p class="card-text text-muted small">Rabu (25/6), SMA Negeri 1 Yogyakarta menerima kunjungan dari Kepala BBPPMPV...</p>
             </div>
           </div>
@@ -196,7 +289,9 @@
           <div class="card border-0 shadow-sm position-relative">
             <img src="img/iklan1.jpg" class="card-img-top image-responsive" alt="Berita 1" />
             <div class="card-body">
-              <h6 class="fw-bold">SPMB 2025: SMAN 1 Yogyakarta Terpilih Sebagai Sekolah Tinjauan...</h6>
+              <a href="#">
+                <h6 class="fw-bold">SPMB 2025: SMAN 1 Yogyakarta Terpilih Sebagai Sekolah Tinjauan...</h6>
+              </a>
               <p class="card-text text-muted small">Rabu (25/6), SMA Negeri 1 Yogyakarta menerima kunjungan dari Kepala BBPPMPV...</p>
             </div>
           </div>
@@ -207,7 +302,9 @@
           <div class="card border-0 shadow-sm position-relative">
             <img src="img/iklan4.jpg" class="card-img-top image-responsive" alt="Berita 2" />
             <div class="card-body">
-              <h6 class="fw-bold">Langkah Kecil, Dampak Besar: Teladan Charity Run 2025 Sukses...</h6>
+              <a href="#">
+                <h6 class="fw-bold">Langkah Kecil, Dampak Besar: Teladan Charity Run 2025 Sukses...</h6>
+              </a>
               <p class="card-text text-muted small">SMA Negeri 1 Yogyakarta menggelar kegiatan istimewa bertajuk Teladan Manunggal Bhakti...</p>
             </div>
           </div>
@@ -218,53 +315,19 @@
           <div class="card border-0 shadow-sm position-relative">
             <img src="img/iklan3.jpg" class="card-img-top image-responsive" alt="Berita 3" />
             <div class="card-body">
-              <h6 class="fw-bold">Teladan Menembus Batas Dunia! Ujian Cambridge Mei–Juni...</h6>
+              <a href="#">
+                <h6 class="fw-bold">Teladan Menembus Batas Dunia! Ujian Cambridge Mei–Juni...</h6>
+              </a>
               <p class="card-text text-muted small">SMA Negeri 1 Yogyakarta kembali melaksanakan Cambridge International Examination...</p>
             </div>
           </div>
         </div>
         <span class="d-flex justify-content-center">
-          <a href="#" class="btn btn-outline-secondary">Tampilkan Semua Berita</a>
+          <a href="#" class="btn btn-outline-warning">Tampilkan Semua Berita</a>
         </span>
       </div>
     </div>
     <!-- Akhir Berita -->
-
-    <!-- Kata Alumni -->
-    <div class="container">
-      <h2 class="section-title">Kata Alumni</h2>
-      <div class="row">
-        <div class="col-md-3">
-          <div class="card border-0 shadow-sm">
-            <div class="card-body">
-              <p class="card-text">"Pengalaman di SMA Negeri 1 Yogyakarta sangat berharga. Saya merasa siap menghadapi tantangan di dunia kuliah!" - Alumni 1</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card border-0 shadow-sm">
-            <div class="card-body">
-              <p class="card-text">"Dukungan dari guru dan teman-teman membuat saya lebih percaya diri. Terima kasih, SMA Negeri 1 Yogyakarta!" - Alumni 2</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card border-0 shadow-sm">
-            <div class="card-body">
-              <p class="card-text">"Saya mendapatkan banyak ilmu dan pengalaman berharga selama di sini. Semoga SMA Negeri 1 Yogyakarta terus maju!" - Alumni 3</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card border-0 shadow-sm">
-            <div class="card-body">
-              <p class="card-text">"Saya mendapatkan banyak ilmu dan pengalaman berharga selama di sini. Semoga SMA Negeri 1 Yogyakarta terus maju!" - Alumni 3</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Akhir Kata Alumni -->
 
     <!-- script untuk navbar -->
     <script>
