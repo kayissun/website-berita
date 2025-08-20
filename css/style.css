@@ -1,5 +1,6 @@
 body {
   height: 40000px;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Hero Section */
@@ -120,17 +121,16 @@ body {
 }
 
 /* BERITA */
-#berita, #program-studi {
+#berita,
+#program-studi,
+#agenda,
+#contact {
   scroll-margin-top: 80px; /* Sesuaikan dengan tinggi navbar */
 }
 
 .berita {
-  /* background-color: #ffd000; */
+  background-color: #ffd000;
   min-width: 100%;
-}
-
-.berita h2 {
-  font-family: "Poppins", sans-serif;
 }
 
 .section-title {
@@ -142,14 +142,14 @@ body {
 .section-title hr {
   margin: auto;
   border-color: rgb(255, 0, 0);
-  width: 50px;
+  width: 70px;
   border-width: 3px;
 }
 
 .section-title h2 {
   font-weight: bold;
-  font-family: "Poppins", sans-serif;
 }
+
 .card img {
   height: 200px;
   object-fit: cover;
@@ -197,4 +197,69 @@ body {
 .program-features p {
   font-size: 14px;
   margin-bottom: 8px;
+}
+
+/* agenda */
+.agenda-item {
+  display: flex;
+  align-items: stretch;
+  background: #fff;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+.agenda-date {
+  background: #ffd000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.agenda-date .day {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1;
+}
+.agenda-date .month {
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+.agenda-content {
+  padding: 20px;
+  flex: 1;
+}
+.agenda-content h5 {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.agenda-content p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.agenda-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.contact-info {
+  padding: 5px;
+  display: flex;
+}
+
+
+.form-control:focus {
+  border-color: #575c0d;
+  box-shadow: 0 0 5px rgba(91, 92, 13, 0.5);
 }
