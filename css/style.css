@@ -1,5 +1,5 @@
 body {
-  height: 40000px;
+  /* height: 40000px; */
   font-family: "Poppins", sans-serif;
 }
 
@@ -124,8 +124,9 @@ body {
 #berita,
 #program-studi,
 #agenda,
-#contact {
-  scroll-margin-top: 80px; /* Sesuaikan dengan tinggi navbar */
+#contact,
+#agenda {
+  scroll-margin-top: 81px; /* Sesuaikan dengan tinggi navbar */
 }
 
 .berita {
@@ -141,8 +142,8 @@ body {
 
 .section-title hr {
   margin: auto;
-  border-color: rgb(255, 0, 0);
-  width: 70px;
+  border-color: #ff6600;
+  width: 90px;
   border-width: 3px;
 }
 
@@ -153,6 +154,16 @@ body {
 .card img {
   height: 200px;
   object-fit: cover;
+}
+
+.card-body a {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s ease;
+}
+
+.card-body a:hover {
+  color: #ff6600;
 }
 
 /* Efek Zoom Card Image */
@@ -211,7 +222,7 @@ body {
   transition: 0.3s ease;
 }
 .agenda-date {
-  background: #ffd000;
+  background: #ff6600;
   color: #fff;
   text-align: center;
   padding: 20px;
