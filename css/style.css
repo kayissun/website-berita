@@ -43,12 +43,19 @@ body {
   border-radius: 50px;
 }
 .search-box a {
-  background: orange;
+  background: #ff6600;
   border: none;
   color: black;
   padding: 10px 25px;
   border-radius: 50px;
   font-weight: 500;
+}
+
+.search-box a:hover {
+  background: #ffd000;
+  color: black;
+  text-decoration: none;
+
 }
 
 /* Dropdown Hover */
@@ -274,3 +281,10 @@ body {
   border-color: #575c0d;
   box-shadow: 0 0 5px rgba(91, 92, 13, 0.5);
 }
+
+.dashed {
+  border: none;              /* hilangkan default */
+  border-top: 2px dashed white; /* garis putus-putus warna abu tua */
+  margin: 20px 0;            /* jarak atas bawah */
+}
+
