@@ -287,26 +287,3 @@ body {
   border-top: 2px dashed white; /* garis putus-putus warna abu tua */
   margin: 20px 0;            /* jarak atas bawah */
 }
-
-/* berita */
-.news-card img {
-  object-fit: cover;
-  height: 200px;
-}
-.category-badge {
-  background-color: red;
-  color: white;
-  font-size: 12px;
-  padding: 3px 8px;
-  border-radius: 5px;
-}
-.sidebar-title {
-  background: red;
-  color: #fff;
-  padding: 8px;
-  font-weight: bold;
-}
-.nav-tabs .nav-link.active {
-  background-color: red;
-  color: white !important;
-}

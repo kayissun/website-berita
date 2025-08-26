@@ -1,0 +1,130 @@
+/* Dropdown Hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item:hover {
+  background-color: #ff6600;
+  color: white;
+}
+
+/* Awal navbar transparan */
+.navbar {
+  transition: all 0.3s ease;
+  padding: 1rem;
+  font-weight: 600;
+  height: 80px;
+}
+.navbar.transparent {
+  background-color: transparent !important;
+}
+/* Saat di-scroll, ubah background */
+.navbar.scrolled {
+  background-color: white !important;
+  padding: 0.7rem;
+  font-weight: 600;
+}
+
+/* Default link awal */
+.navbar-nav .nav-link {
+  transition: color 0.3s ease;
+  color: white;
+}
+
+/* Active di awal */
+.navbar.transparent .nav-link.active {
+  color: #ff6600 !important;
+  font-weight: bold;
+}
+
+.navbar-brand {
+  transition: all 0.3s ease;
+  font-weight: 700;
+}
+.navbar.scrolled .navbar-brand {
+  color: black !important; /* atau ganti logo/gambar */
+}
+
+/* Saat navbar sudah discroll */
+.navbar.scrolled .nav-link {
+  color: black;
+}
+.navbar.scrolled .nav-link:hover {
+  color: #ff6600;
+}
+.navbar.scrolled .nav-link.active {
+  color: #ff6600 !important;
+}
+
+.dropdown-item:hover {
+  color: #ff6600;
+  background-color: transparent;
+}
+
+/* berita */
+.news-card img {
+  object-fit: cover;
+  height: 200px;
+}
+.category-badge {
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+.sidebar-title {
+  background: red;
+  color: #fff;
+  padding: 8px;
+  font-weight: bold;
+}
+.nav-tabs .nav-link.active {
+  background-color: red;
+  color: white !important;
+}
+
+/* carousel berita */
+.teks-hero {
+  position: absolute;
+  font-size: larger;
+  bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  left: -4rem;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.teks-hero:hover {
+  color: #ff6600;
+}
+
+.carousel-caption span a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight:400;
+  padding: 10px;
+}
+
+.carousel-caption span {
+  position: absolute;
+  bottom: 0.3rem;
+  left: -4.5rem;
+}
+
+/* Tambahkan style khusus untuk icon */
+.carousel-caption span a i {
+  color: white !important; /* Memaksa warna icon tetap putih */
+}
+
+.carousel-caption span a:hover {
+  color: #ff6600;
+}
