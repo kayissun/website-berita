@@ -70,37 +70,49 @@
     <div class="container mt-5 py-5">
       <div class="row">
         <div class="col-md-8">
-          <div id="carouselExample" class="carousel slide">
+          <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="300000">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="img/polsa.png" class="d-block w-100" height="450" alt="..." />
-                <div class="carousel-caption d-md-block text-start">
+                <div class="carousel-caption d-md-block text-start shadow-lg">
+                  <span class="kategori d-flex">
+                    <a href="#" class="text-white">EVENT</a>
+                  </span>
                   <a href="#" class="teks-hero">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi animi quod reprehenderit fuga totam atque.</a>
-                  <span
+                  <span class="date"
                     ><br />
                     <a href="#"><i class="fas fa-clock me-1"></i> 12 Agustus 2025 </a>
-                    <a href="#"><i class="fas fa-user me-1"></i>Humas Polsa </a>
-                    </span>
+                    <a href="#"><i class="fas fa-user me-2"></i>Humas Polsa </a>
+                  </span>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="img/polsa.png" class="d-block w-100" height="450" alt="..." />
                 <div class="carousel-caption d-md-block text-start">
+                  <span class="kategori d-flex">
+                    <a href="#" class="text-white">PRESTASI MAHASISWA</a>
+                  </span>
                   <a href="#" class="teks-hero">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi animi quod reprehenderit fuga totam atque.</a>
-                  <span
+                  <span class="date"
                     ><br />
-                    <a> <i class="fas fa-clock"></i> 12 Agustus 2025 <i class="fas fa-user"></i>Humas Polsa </a></span
-                  >
+                    <a href="#"><i class="fas fa-clock me-1"></i> 12 Agustus 2025 </a>
+                    <a href="#"><i class="fas fa-user me-2"></i>Humas Polsa </a>
+                  </span>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="img/polsa.png" class="d-block w-100" height="450" alt="..." />
                 <div class="carousel-caption d-md-block text-start">
+                  <span class="kategori d-flex">
+                    <a href="#" class="text-white">AKADEMIK</a>
+                    <a href="#" class="text-white">KERJASAMA</a>
+                  </span>
                   <a href="#" class="teks-hero">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi animi quod reprehenderit fuga totam atque.</a>
-                  <span
+                  <span class="date"
                     ><br />
-                    <a> <i class="fas fa-clock"></i> 12 Agustus 2025 <i class="fas fa-user"></i>Humas Polsa </a></span
-                  >
+                    <a href="#"><i class="fas fa-clock me-1"></i> 12 Agustus 2025 </a>
+                    <a href="#"><i class="fas fa-user me-2"></i>Humas Polsa </a>
+                  </span>
                 </div>
               </div>
             </div>
@@ -127,17 +139,17 @@
         </div>
 
         <!-- Sidebar -->
-        <div class="col-md-4">
+        <div class="col-md-4 shadow-lg">
           <!-- Tabs Latest/Popular/Trending -->
           <ul class="nav nav-tabs" id="newsTab" role="tablist">
             <li class="nav-item" role="presentation">
-              <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#latest" type="button">Latest</button>
+              <button class="nav-link active text-black" data-bs-toggle="tab" data-bs-target="#latest" type="button"><i class="fas fa-clock me-2"></i>Latest</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#popular" type="button">Popular</button>
+              <button class="nav-link text-black" data-bs-toggle="tab" data-bs-target="#popular" type="button"><i class="fas fa-star me-2"></i>Popular</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#trending" type="button">Trending</button>
+              <button class="nav-link text-black" data-bs-toggle="tab" data-bs-target="#trending" type="button"><i class="fas fa-chart-line me-2"></i>Trending</button>
             </li>
           </ul>
           <div class="tab-content border p-2 bg-white">
@@ -152,9 +164,26 @@
               <p><b>Satgas PPKPT Gelar MoU</b></p>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
 
-          <!-- Pos-pos terbaru -->
-          <div class="mt-3">
+    <!-- Semua Berita -->
+    <div class="container berita">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="card mb-4 news-card">
+            <img src="img/polsa.png" class="card-img-top" alt="Berita" />
+            <div class="card-body">
+              <span class="category-badge">PRESTASI MAHASISWA</span>
+              <h5 class="card-title">Judul Berita</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pos-pos terbaru -->
+        <div class="col-md-4">
+          <div class="mt-3 shadow-lg">
             <div class="sidebar-title">POS-POS TERBARU</div>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">HUT RI ke 80, UPB Gelar Upacara</li>
@@ -165,7 +194,7 @@
           </div>
 
           <!-- Kategori -->
-          <div class="mt-3">
+          <div class="mt-3 shadow-lg">
             <div class="sidebar-title">KATEGORI</div>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">Akademik</li>
