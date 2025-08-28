@@ -1,6 +1,7 @@
 body {
   /* height: 40000px; */
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden; /* Tambahkan overflow-x hidden pada body untuk mencegah horizontal scrollbar */
 }
 
 /* Dropdown Hover */
@@ -176,12 +177,50 @@ body {
   margin-top: -20px;
   margin-right: 20px;
 }
-.card-teks .date a,
-.card-teks .date p {
+.card-teks .date a {
+  color: black;
   padding-top: 5px;
   padding-bottom: 5px;
   text-decoration: none;
 }
-.card-teks .date p:hover {
-  color: #ff6600;
+.card-teks .date a:hover {
+  color: #ff6600 !important;
+}
+.card-teks .date a i {
+  color: gray !important;
+}
+
+.sticky-sidebar {
+  position: sticky;
+  top: 100px; /* Sesuaikan dengan tinggi navbar */
+  height: fit-content;
+}
+
+.sidebar-sticky {
+  position: sticky;
+  top: 100px; /* Sesuaikan dengan tinggi navbar */
+  height: calc(100vh - 100px); /* Tinggi viewport dikurangi jarak dari atas */
+  overflow-y: auto; /* Untuk scroll internal jika konten sidebar terlalu panjang */
+}
+
+.berita-container {
+  max-height: none; /* Biarkan berita scroll normal */
+}
+
+/* Tambahkan scrollbar yang lebih menarik untuk sidebar */
+.sidebar-sticky::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar-sticky::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.sidebar-sticky::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.sidebar-sticky::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
