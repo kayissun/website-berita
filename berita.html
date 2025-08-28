@@ -172,17 +172,45 @@
     <div class="container berita">
       <div class="row">
         <div class="col-md-8">
-          <div class="card mb-4 news-card">
-            <img src="img/polsa.png" class="card-img-top" alt="Berita" />
-            <div class="card-body">
-              <span class="category-badge">PRESTASI MAHASISWA</span>
-              <h5 class="card-title">Judul Berita</h5>
+          <div class="card shadow-lg">
+            <div class="row g-2 my-2 ms-3">
+              <!-- Gambar -->
+              <div class="col-md-6 position-relative">
+                <a href="#"><img src="img/polsa.png" class="img " alt="gambar berita" style="width: 350px; height: 250px; object-fit: cover;" /></a>
+              </div>
+
+              <!-- Konten -->
+              <div class="col-md-6">
+                <div class="card-teks card-body">
+                  <!-- Label -->
+                  <span class="kategori"><a href="#" class="text-white" style="font-size: 11px;">EVENT</a></span>
+
+                  <!-- Judul -->
+                  <span class="card-title"><a href="#"><h5 class="fw-bold">HUT RI ke 80, UPB Gelar Upacara</h5></a></span>
+
+                  <!-- Meta info -->
+                  <span class="date"><a href="#"><p class="text-muted mb-1"><i class="far fa-calendar-alt"></i> Agustus 17, 2025 &nbsp; | &nbsp; <i class="fas fa-user"></i> Humas UPB</p></a></span>
+
+                  <!-- Isi singkat -->
+                  <p class="card-text text-start">
+                    Universitas Putra Bangsa (UPB) menggelar upacara bendera untuk memperingati Hari Ulang Tahun (HUT) Kemerdekaan Republik Indonesia ke-80 pada Minggu, 17 Agustus 2025 di halaman UPB. Upacara yang berlangsung khidmat ini…
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Pos-pos terbaru -->
+        <!-- Sidebar Kanan -->
         <div class="col-md-4">
+          <!-- Search -->
+          <div class="mb-3">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search" />
+              <button class="btn btn-warning text-white" type="button"><i class="fa fa-search"></i></button>
+            </div>
+          </div>
+          <!-- Pos-pos terbaru -->
           <div class="mt-3 shadow-lg">
             <div class="sidebar-title">POS-POS TERBARU</div>
             <ul class="list-group list-group-flush">

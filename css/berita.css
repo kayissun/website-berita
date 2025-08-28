@@ -3,10 +3,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-:root {
-  --shadow : 0 4px 30px rgba(0, 0, 0, 0.5);
-}
-
 /* Dropdown Hover */
 .dropdown:hover .dropdown-menu {
   display: block;
@@ -99,9 +95,9 @@ body {
   color: white !important;
 }
 
-/* carousel berita */
+/* SELECTOR UNTUK CAROUSEL */
 .carousel-item img {
-  filter: brightness(80%);
+  filter: brightness(60%);
 }
 
 .teks-hero {
@@ -118,11 +114,13 @@ body {
   transition: color 0.3s ease;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
 .teks-hero:hover {
   color: #ff6600;
 }
 
-.carousel-caption span a {
+/* SELECTOR UNTUK TANGGAL */
+.carousel-caption .date a {
   color: white;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -136,6 +134,16 @@ body {
   left: -4.5rem;
 }
 
+.carousel-caption .date a:hover {
+  color: #ff6600;
+}
+
+/* Tambahkan style khusus untuk icon */
+.carousel-caption .date a i {
+  color: white !important; /* Memaksa warna icon tetap putih */
+}
+
+/* selector badge kategori */
 .carousel-caption .kategori {
   position: absolute;
   bottom: 8rem;
@@ -144,7 +152,8 @@ body {
   gap: 5px;
 }
 
-.carousel-caption .kategori a {
+.carousel-caption .kategori a,
+.kategori a {
   text-decoration: none;
   padding: 1px 5px;
   border-radius: 3px;
@@ -152,15 +161,27 @@ body {
   background-color: #ff6600;
 }
 
-/* .carousel-caption .kategori a:hover {
-  background-color: #e65c00;
-} */
-
-/* Tambahkan style khusus untuk icon */
-.carousel-caption span a i {
-  color: white !important; /* Memaksa warna icon tetap putih */
+/* SELECTOR UNTUK TEKS CARD */
+.card-title a {
+  text-decoration: none;
+  color: black;
 }
-
-.carousel-caption span a:hover {
+.card-title a:hover {
+  color: #ff6600;
+  text-decoration: none;
+}
+.card-teks {
+  position: relative;
+  font-size: 15px;
+  margin-top: -20px;
+  margin-right: 20px;
+}
+.card-teks .date a,
+.card-teks .date p {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+.card-teks .date p:hover {
   color: #ff6600;
 }
