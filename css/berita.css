@@ -102,10 +102,12 @@ body {
 }
 
 .teks-hero {
+  /* white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; */
   cursor: pointer;
   line-height: 30px;
   position: absolute;
-  /* font-size: larger; */
   font-size: 1.5rem;
   font-weight: 600;
   bottom: 2rem;
@@ -115,9 +117,39 @@ body {
   transition: color 0.3s ease;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+.judul {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 300px; /* batas lebar */
+}
 
 .teks-hero:hover {
   color: #ff6600;
+}
+
+/* Carousel Controls Animasi */
+.carousel:hover .carousel-control-prev,
+.carousel:hover .carousel-control-next {
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  opacity: 0;  /* Mulai dengan opacity 0 */
+  transition: all 0.3s ease;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 30px;
+  height: 30px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  transform: scale(1.1);  /* Efek scaling saat hover */
 }
 
 /* SELECTOR UNTUK TANGGAL */
@@ -144,22 +176,18 @@ body {
   color: white !important; /* Memaksa warna icon tetap putih */
 }
 
-/* selector badge kategori */
-.carousel-caption .kategori {
+/* selector badge */
+.carousel-caption .badge {
   position: absolute;
+  text-decoration: none;
   bottom: 8rem;
   left: -4rem;
   font-size: 11px;
   gap: 5px;
 }
 
-.carousel-caption .kategori a,
-.kategori a {
+.card-body .badge {
   text-decoration: none;
-  padding: 1px 5px;
-  border-radius: 3px;
-  font-weight: 200;
-  background-color: #ff6600;
 }
 
 /* SELECTOR UNTUK TEKS CARD */
@@ -171,22 +199,33 @@ body {
   color: #ff6600;
   text-decoration: none;
 }
-.card-teks {
+.card-title a h5 {
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* Batasi jadi 2 baris */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-body {
   position: relative;
   font-size: 15px;
-  margin-top: -20px;
+  margin-top: -10px;
   margin-right: 20px;
 }
-.card-teks .date a {
+.card-body .date a {
   color: black;
   padding-top: 5px;
   padding-bottom: 5px;
   text-decoration: none;
 }
-.card-teks .date a:hover {
+.card-body .date a:hover {
   color: #ff6600 !important;
 }
-.card-teks .date a i {
+.card-body .date a i {
   color: gray !important;
 }
 
