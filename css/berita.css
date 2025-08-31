@@ -48,7 +48,6 @@ body {
   color: #ff6600 !important;
   font-weight: bold;
 }
-
 .navbar-brand {
   transition: all 0.3s ease;
   font-weight: 700;
@@ -67,24 +66,10 @@ body {
 .navbar.scrolled .nav-link.active {
   color: #ff6600 !important;
 }
-
 .dropdown-item:hover {
   color: #ff6600;
   background-color: transparent;
 }
-
-/* berita */
-/* .news-card img {
-  object-fit: cover;
-  height: 200px;
-} */
-/* .category-badge {
-  background-color: #00ff00;
-  color: white;
-  font-size: 12px;
-  padding: 3px 8px;
-  border-radius: 5px;
-} */
 .sidebar-title {
   background: #ff6600;
   color: #fff;
@@ -100,13 +85,15 @@ body {
 .carousel-item img {
   filter: brightness(60%);
 }
-
 .teks-hero {
-  /* white-space: nowrap;
+  /* Hapus white-space: nowrap untuk memungkinkan wrapping */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* Batasi menjadi 2 baris */
   overflow: hidden;
-  text-overflow: ellipsis; */
+  text-overflow: ellipsis;
   cursor: pointer;
-  line-height: 30px;
+  line-height: 1.5;
   position: absolute;
   font-size: 1.5rem;
   font-weight: 600;
@@ -116,14 +103,8 @@ body {
   text-decoration: none;
   transition: color 0.3s ease;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  min-width: 650px; /* Tambahkan min-width untuk mengontrol lebar teks */
 }
-.judul {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 300px; /* batas lebar */
-}
-
 .teks-hero:hover {
   color: #ff6600;
 }
@@ -160,13 +141,11 @@ body {
   font-weight: 400;
   padding: 10px;
 }
-
 .carousel-caption .date {
   position: absolute;
   bottom: 0.3rem;
   left: -4.5rem;
 }
-
 .carousel-caption .date a:hover {
   color: #ff6600;
 }
@@ -180,12 +159,11 @@ body {
 .carousel-caption .badge {
   position: absolute;
   text-decoration: none;
-  bottom: 8rem;
+  bottom: 7rem;
   left: -4rem;
   font-size: 11px;
   gap: 5px;
 }
-
 .card-body .badge {
   text-decoration: none;
 }
@@ -199,7 +177,7 @@ body {
   color: #ff6600;
   text-decoration: none;
 }
-.card-title a h5 {
+.card-title a h5, .news-title {
   margin-top: 10px;
   text-decoration: none;
   font-weight: bold;
@@ -250,16 +228,13 @@ body {
 .sidebar-sticky::-webkit-scrollbar {
   width: 6px;
 }
-
 .sidebar-sticky::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
-
 .sidebar-sticky::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 3px;
 }
-
 .sidebar-sticky::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
