@@ -1,7 +1,21 @@
 body {
   /* height: 40000px; */
   font-family: "Poppins", sans-serif;
-  overflow-x: hidden; /* Tambahkan overflow-x hidden pada body untuk mencegah horizontal scrollbar */
+}
+
+/* SELECTOR UNTUK NAVBAR */
+.navbar {
+  transition: all 0.3s ease;
+  padding: 1rem;
+  font-weight: 600;
+  height: 80px;
+}
+.navbar-nav .nav-link {
+  transition: color 0.3s ease;
+  color: white;
+}
+.navbar-brand {
+  font-weight: 700;
 }
 
 /* Dropdown Hover */
@@ -9,76 +23,18 @@ body {
   display: block;
   margin-top: 0;
 }
-
 .dropdown-menu {
   border: none;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }
-
 .dropdown-item:hover {
   background-color: #ff6600;
   color: white;
 }
-
-/* Awal navbar transparan */
-.navbar {
-  transition: all 0.3s ease;
-  padding: 1rem;
-  font-weight: 600;
-  height: 80px;
-}
-.navbar.transparent {
-  background-color: transparent !important;
-}
-/* Saat di-scroll, ubah background */
-.navbar.scrolled {
-  background-color: white !important;
-  padding: 0.7rem;
-  font-weight: 600;
-}
-
-/* Default link awal */
-.navbar-nav .nav-link {
-  transition: color 0.3s ease;
-  color: white;
-}
-
-/* Active di awal */
-.navbar.transparent .nav-link.active {
-  color: #ff6600 !important;
-  font-weight: bold;
-}
-.navbar-brand {
-  transition: all 0.3s ease;
-  font-weight: 700;
-}
-.navbar.scrolled .navbar-brand {
-  color: black !important; /* atau ganti logo/gambar */
-}
-
-/* Saat navbar sudah discroll */
-.navbar.scrolled .nav-link {
-  color: black;
-}
-.navbar.scrolled .nav-link:hover {
-  color: #ff6600;
-}
-.navbar.scrolled .nav-link.active {
-  color: #ff6600 !important;
-}
-.dropdown-item:hover {
+.dropdown-item:hover,
+.nav-link:hover {
   color: #ff6600;
   background-color: transparent;
-}
-.sidebar-title {
-  background: #ff6600;
-  color: #fff;
-  padding: 8px;
-  font-weight: bold;
-}
-.nav-tabs .nav-link.active {
-  background-color: #ff6600;
-  color: white !important;
 }
 
 /* SELECTOR UNTUK CAROUSEL */
