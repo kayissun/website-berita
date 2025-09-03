@@ -111,6 +111,55 @@ body {
   color: white !important; /* Memaksa warna icon tetap putih */
 }
 
+/* SELECTOR SIDEBAR 1 */
+.nav-tabs {
+  border-bottom: 2px solid #dee2e6;
+}
+.nav-tabs .nav-link {
+  margin-bottom: -2px;
+  border: none;
+  color: #666;
+  padding: 10px 15px;
+  transition: all 0.1s ease;
+}
+.nav-tabs .nav-link:hover {
+  border: none;
+  color: #ff6600;
+}
+.nav-tabs .nav-link.active {
+  border: none;
+  border-bottom: 2px solid #ff6600;
+  border-left: 2px solid #ff6600;
+  color: #ff6600;
+  font-weight: 600;
+}
+
+
+/* Hover untuk badge kategori */
+.badge {
+    transition: all 0.3s ease;
+}
+
+.badge:hover {
+    background-color: #cc5200 !important;
+    transform: translateY(-2px);
+}
+
+/* Hover untuk search button */
+.btn-warning:hover {
+    background-color: #cc5200;
+    border-color: #cc5200;
+}
+
+/* Hover untuk news title di sidebar */
+.news-title {
+    transition: color 0.3s ease;
+}
+
+.list-group-item:hover .news-title {
+    color: #ff6600;
+}
+
 /* selector badge */
 .carousel-caption .badge {
   position: absolute;
@@ -143,7 +192,6 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 .card-body {
   position: relative;
   font-size: 15px;
@@ -163,6 +211,7 @@ body {
   color: gray !important;
 }
 
+/* SELECTOR STICKY SIDEBAR 2 */
 .sticky-sidebar {
   position: sticky;
   top: 100px; /* Sesuaikan dengan tinggi navbar */
