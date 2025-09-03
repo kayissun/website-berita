@@ -173,7 +173,6 @@ body {
   color: #ff6600;
 }
 
-/* Efek Zoom Card Image */
 .program-studi {
   background-color: #ffd000;
   min-width: 100%;
@@ -182,6 +181,7 @@ body {
   overflow: hidden;
 }
 
+/* Efek Zoom Card Image */
 .card img.image-responsive {
   transition: transform 0.3s ease;
   width: 100%;
