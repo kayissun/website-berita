@@ -1,0 +1,90 @@
+body {
+  /* height: 40000px; */
+  font-family: "Poppins", sans-serif;
+}
+
+/* SELECTOR UNTUK NAVBAR */
+.navbar {
+  transition: all 0.3s ease;
+  padding: 1rem;
+  font-weight: 600;
+  height: 80px;
+}
+.navbar-nav .nav-link {
+  transition: color 0.3s ease;
+  color: white;
+}
+.navbar-brand {
+  font-weight: 700;
+}
+
+/* Dropdown Hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+.dropdown-item:hover {
+  background-color: #ff6600;
+  color: white;
+}
+.dropdown-item:hover,
+.nav-link:hover {
+  color: #ff6600;
+  background-color: transparent;
+}
+
+/* SELECTOR JUMBOTRON */
+.jumbotron {
+    margin-top: 6rem;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* SELECTOR SIDEBAR 2 */
+.sidebar-title {
+  background: #ff6600;
+  color: #fff;
+  padding: 8px;
+  font-weight: bold;
+}
+.pos .list-group-item a,
+.kategori .list-group-item a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+}
+.pos .list-group-item a:hover,
+.kategori .list-group-item a:hover {
+  color: #ff6600;
+}
+.sticky-sidebar {
+  position: sticky;
+  top: 100px; /* Sesuaikan dengan tinggi navbar */
+  height: fit-content;
+}
+.sidebar-sticky {
+  position: sticky;
+  top: 100px; /* Sesuaikan dengan tinggi navbar */
+  height: calc(100vh - 100px); /* Tinggi viewport dikurangi jarak dari atas */
+  overflow-y: auto; /* Untuk scroll internal jika konten sidebar terlalu panjang */
+}
+.berita-container {
+  max-height: none; /* Biarkan berita scroll normal */
+}
+/* Tambahkan scrollbar yang lebih menarik untuk sidebar */
+.sidebar-sticky::-webkit-scrollbar {
+  width: 6px;
+}
+.sidebar-sticky::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.sidebar-sticky::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+.sidebar-sticky::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
