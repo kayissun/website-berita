@@ -110,13 +110,14 @@ body {
 .berita-selanjutnya a {
   color: #ff6600;
   font-weight: bold;
-  margin-left: 56%;
+  margin-left: 40%;
+  margin-right: 20px;
   text-decoration: none;
   display: -webkit-box; /* Diperlukan untuk line-clamp */
   -webkit-box-orient: vertical; /* Diperlukan untuk line-clamp */
   overflow: hidden; /* Menyembunyikan teks yang melebihi batas */
   -webkit-line-clamp: 3; /* Batasi teks hingga 3 baris */
-  max-width: 300px; /* Atur lebar maksimum elemen */
+  max-width: 590px; /* Atur lebar maksimum elemen */
   /* Anda juga bisa menambahkan properti seperti 'height' jika diperlukan */
 }
 
@@ -141,3 +142,4 @@ body {
   font-size: 110px;
   color: gray;
 }
+
