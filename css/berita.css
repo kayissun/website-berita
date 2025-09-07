@@ -131,7 +131,7 @@ body {
 .penulis-heading {
   color: black;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 25px;
   transition: color 0.2s ease;
   font-weight: bold;
 }
@@ -139,7 +139,49 @@ body {
   color: #ff6600;
 }
 .penulis i {
-  font-size: 110px;
+  font-size: 90px;
   color: gray;
 }
 
+/* Related Posts */
+.related-posts .card {
+  border: none;
+}
+.card-img-overlay{
+  margin-top: 50px;
+  text-decoration: none;
+  shadow: 0 3px 8px rgba(0, 0, 0, 0.9);
+}
+.card-img-overlay .card-title  {
+  color: white;
+  line-height: 23px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  display: -webkit-box; /* Diperlukan untuk line-clamp */
+  -webkit-box-orient: vertical; /* Diperlukan untuk line-clamp */
+  overflow: hidden; /* Menyembunyikan teks yang melebihi batas */
+  -webkit-line-clamp: 2; /* Batasi teks hingga 2 baris */
+  max-width: 590px; /* Atur lebar maksimum elemen */
+}
+.card-img-overlay .card-title:hover {
+  color: #ff6600;
+}
+.card-img-overlay .badge {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 9px !important;
+}
+.card-img-overlay .date a {
+  font-weight: bold;
+  color: white;
+  font-size: 10px;
+  text-decoration: none;
+  margin-top: -8px;
+}
+.card-img-overlay i {
+  color: white;
+}
+.card-img-overlay .date a:hover {
+  color: #ff6600;
+}
