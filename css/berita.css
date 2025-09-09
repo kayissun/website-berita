@@ -74,20 +74,7 @@ body {
 .berita-container {
   max-height: none; /* Biarkan berita scroll normal */
 }
-/* Tambahkan scrollbar yang lebih menarik untuk sidebar */
-.sidebar-sticky::-webkit-scrollbar {
-  width: 6px;
-}
-.sidebar-sticky::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-.sidebar-sticky::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 3px;
-}
-.sidebar-sticky::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
+
 /* SELECTOR UNTUK BERITA */
 .container h2 {
   margin-bottom: 1rem !important;

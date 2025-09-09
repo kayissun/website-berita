@@ -9,13 +9,19 @@ body {
   padding: 1rem;
   font-weight: 600;
   height: 80px;
+  background-color: #FEE715;
 }
 .navbar-nav .nav-link {
   transition: color 0.3s ease;
-  color: white;
+  color: #101820;
+  font-weight: 600;
 }
 .navbar-brand {
-  font-weight: 700;
+  font-weight: 800;
+  color: #101820;
+}
+.navbar-brand:hover {
+  color: #101820;
 }
 
 /* Dropdown Hover */
@@ -223,17 +229,4 @@ body {
 .berita-container {
   max-height: none; /* Biarkan berita scroll normal */
 }
-/* Tambahkan scrollbar yang lebih menarik untuk sidebar */
-.sidebar-sticky::-webkit-scrollbar {
-  width: 6px;
-}
-.sidebar-sticky::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-.sidebar-sticky::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 3px;
-}
-.sidebar-sticky::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
+
