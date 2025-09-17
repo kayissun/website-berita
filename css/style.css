@@ -52,27 +52,27 @@ body {
 }
 
 .search-box a:hover {
-  background: #ffd000;
+  background: #ff6600;
   color: black;
   text-decoration: none;
-
+}
+.search-box input {
+  padding-left: 30px;
 }
 
-/* Dropdown Hover */
+/* Dropdown Hover untuk navbar */
 .dropdown:hover .dropdown-menu {
   display: block;
   margin-top: 0;
 }
-
 .dropdown-menu {
   border: none;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }
-
-.dropdown-item:hover {
+/* .dropdown-item:hover {
   background-color: #ff6600;
   color: white;
-}
+}  */
 
 /* Awal navbar transparan */
 .navbar {
@@ -125,6 +125,13 @@ body {
 .dropdown-item:hover {
   color: #ff6600;
   background-color: transparent;
+}
+.readmore {
+  color: #ff6600;
+  text-decoration: none;
+}
+.readmore:hover {
+  color: #ffd000;
 }
 
 /* BERITA */
@@ -276,6 +283,9 @@ body {
   display: flex;
 }
 
+    .error {
+      border: 2px solid red; /* bingkai merah */
+    }
 
 .form-control:focus {
   border-color: #575c0d;
