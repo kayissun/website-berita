@@ -86,7 +86,7 @@ body {
 }
 /* Saat di-scroll, ubah background */
 .navbar.scrolled {
-  background-color: white !important;
+    background-color: #FEE715 !important;
   padding: 0.7rem;
   font-weight: 600;
 }
@@ -108,20 +108,22 @@ body {
   font-weight: 700;
 }
 .navbar.scrolled .navbar-brand {
-  color: black !important; /* atau ganti logo/gambar */
+ color: #101820 !important; /* atau ganti logo/gambar */
 }
 
 /* Saat navbar sudah discroll */
 .navbar.scrolled .nav-link {
-  color: black;
+  color: #101820 !important;
 }
 .navbar.scrolled .nav-link:hover {
-  color: #ff6600;
+  color: #ff6600 !important;
 }
 .navbar.scrolled .nav-link.active {
   color: #ff6600 !important;
 }
-
+.nav-link:hover {
+  color: #ff6600;
+}
 .dropdown-item:hover {
   color: #ff6600;
   background-color: transparent;
@@ -198,6 +200,13 @@ body {
 
 .card:hover img.image-responsive {
   transform: scale(1.1);
+}
+.semua-berita .btn {
+  outline: #ff6600 solid 1px;
+}
+.semua-berita .btn:hover {
+  background-color: #ff6600;
+  transition: all 0.3s ease;
 }
 
 .program-card {
@@ -283,9 +292,9 @@ body {
   display: flex;
 }
 
-    .error {
-      border: 2px solid red; /* bingkai merah */
-    }
+.error {
+  border: 2px solid red; /* bingkai merah */
+}
 
 .form-control:focus {
   border-color: #575c0d;
@@ -293,7 +302,7 @@ body {
 }
 
 .dashed {
-  border: none;              /* hilangkan default */
+  border: none; /* hilangkan default */
   border-top: 2px dashed white; /* garis putus-putus warna abu tua */
-  margin: 20px 0;            /* jarak atas bawah */
+  margin: 20px 0; /* jarak atas bawah */
 }

@@ -1,5 +1,4 @@
 body {
-  height: 40000px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -9,13 +8,17 @@ body {
   padding: 1rem;
   font-weight: 600;
   height: 80px;
+  background-color: #fee715;
 }
 .navbar-nav .nav-link {
   transition: color 0.3s ease;
-  color: white;
+  color: #101820;
+  font-weight: 600;
 }
 .navbar-brand {
-  font-weight: 700;
+  font-weight: 800;
+  color: #101820 !important;
+
 }
 
 /* Dropdown Hover */
@@ -134,12 +137,12 @@ body {
 .related-posts .card {
   border: none;
 }
-.card-img-overlay{
+.card-img-overlay {
   margin-top: 50px;
   text-decoration: none;
   shadow: 0 3px 8px rgba(0, 0, 0, 0.9);
 }
-.card-img-overlay .card-title  {
+.card-img-overlay .card-title {
   color: white;
   line-height: 23px;
   text-decoration: none;
