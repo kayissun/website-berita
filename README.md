@@ -1,2 +1,2 @@
 # beritapolsa
-website berita untuk kampus POLSA
+website berita kampus
