@@ -5,7 +5,7 @@ body {
 
 /* Hero Section */
 .hero {
-  background: url(/img/polsa.png) center/cover no-repeat fixed;
+  background: url(img/polsa.png) center/cover no-repeat fixed;
   filter: brightness(90%);
   height: 100vh;
   position: relative;
